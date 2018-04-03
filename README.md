@@ -7,3 +7,6 @@
 ## Use
 * Live version is available here: <https://bbhatti3.github.io>
 * Or download the FSND_Neighborhood_Project directory and open index.html
+## References
+* Udacity Starter code lesson 8 ud864/Project_Code_6_StaticMapsAndStreetViewImagery.html
+* Knockout Tutorial <http://learn.knockoutjs.com/>
