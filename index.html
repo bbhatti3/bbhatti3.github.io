@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Neighborhood Map</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="overviewlist">
+      <header>
+        <a id="list" class="listing_items">
+            <img src="if_Hamburger_list_menu_options_bars_stack_1887037.png" height="32" width="32">
+        </a>
+      </header>
+      <section>
+        <div class="inputText">
+             <input data-bind="value: searchTitle, valueUpdate: 'afterkeydown'" id="typedtext" type='text' placeholder="Search">
+        </div>
+        <div>
+          <div  id="items" class="steer">
+            <ul class="steer_list" data-bind="foreach: filteredLocations">
+              <li data-bind="click: $parent.changeLocation, text: title" class="steer_item"></li>
+            </ul>
+          </div>
+        </div>
+        </section>
+       </div>
+      <main id = "map">
+      </main>
+    </div>
+   <script src="js/knockout-3.4.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/main.js"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwzbT2GezW4YgxAG5AjW9FNFlyat3dG5g&v=3&callback=initMap" onerror="GoogleMapsFail()"></script>
+</body>
+</html>
